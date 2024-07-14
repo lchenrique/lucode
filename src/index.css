@@ -143,12 +143,12 @@
 
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  @apply bg-neutral-900
+  @apply bg-neutral-900;
 }
 
 ::-webkit-scrollbar {
   width: 5px;
-  @apply bg-neutral-900 
+  @apply bg-neutral-900 ;
 }
 
 ::-webkit-scrollbar-thumb {

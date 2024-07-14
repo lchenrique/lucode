@@ -1,5 +1,4 @@
 
-import { magicPanelPlugin } from "magic-panel/plugin"
 
 /** @type {import('tailwindcss').Config} */
 
@@ -84,4 +83,4 @@ export const theme = {
     },
   },
 }
-export const plugins = [require("tailwindcss-animate"), magicPanelPlugin]
+export const plugins = [require("tailwindcss-animate")]
