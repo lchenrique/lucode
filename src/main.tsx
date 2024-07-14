@@ -4,17 +4,12 @@ import App from './App.tsx'
 import './index.css'
 import { ThemeProvider } from './components/theme-provider/index.tsx'
 import { createBrowserRouter, RouterProvider, } from 'react-router-dom'
-import { Test } from './Test.tsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
   },
-  {
-    path:"/test",
-    element: <Test />,
-  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
