@@ -48,26 +48,26 @@ const Hero = () => {
     <>
       <div id="hero" className="h-full flex-col-reverse lg:flex-row text-left  flex items-center justify-center w-full ">
 
-        <div className="flex flex-col gap-2 sm:text-base mx-3">
-          <h1 className="font-semibold text-foreground  mt-10 text-[2rem] sm:text-5xl text-center lg:text-left">
+        <div className="flex flex-col gap-2 sm:text-base mx-3  ">
+          <h1 className="font-semibold text-foreground  mt-10 text-[2rem] sm:text-5xl text-center lg:text-left jets-brains">
             <Trans i18nKey="hero.hello">Hi, I’m</Trans>{" "}
-            <span className="text-primary whitespace-nowrap font-extrabold">
+            <span className="text-primary whitespace-nowrap font-extrabold jets-brains">
               Carlos Henrique
             </span>
             .
           </h1>
           <div className="items-baseline text-[1.5rem] justify-center lg:justify-start inline-flex mx-auto lg:mx-0  gap-3 sm:text-5xl w-full  max-w-[750px]">
-            { i18n.resolvedLanguage == "en" && <span className="font-semibold leading-[100%] text-foreground">a</span>}
+            { i18n.resolvedLanguage == "en" && <span className="font-semibold leading-[100%] text-foreground jets-brains">a</span>}
             <span
               style={{ width }}
-              className="whitespace-nowrap  leading-[2.5rem] sm:leading-[3.5rem]  overflow-hidden transition-all duration-500 "
+              className="whitespace-nowrap  leading-[2.5rem] sm:leading-[3.5rem]  overflow-hidden transition-all duration-500 jets-brains"
             >
-              <b ref={ref1} className={toggle ? "hidden" : "visible text-foreground"}>
+              <b ref={ref1} className={toggle ? "hidden" : "visible text-foreground jets-brains"}>
                 <Trans i18nKey="role.ref1">
                   Developer.
                 </Trans>
               </b>
-              <b ref={ref2} className={!toggle ? "hidden" : "visible text-foreground"}>
+              <b ref={ref2} className={!toggle ? "hidden" : "visible text-foreground jets-brains"}>
                 <Trans i18nKey="role.ref2">
                   Front-End Engineer.
                 </Trans>

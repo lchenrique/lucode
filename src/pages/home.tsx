@@ -52,9 +52,7 @@ const Home = () => {
         <Hero />
         <Divider />
         <section id="my-services" className="w-full mt-8">
-          <h1 className="text-4xl">
-            <Trans i18nKey="section.services">My Services</Trans>
-          </h1>
+          <SectionTitle title="My Services" translation="section.services" />
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 mt-5">
             <Card
               title={
@@ -116,9 +114,7 @@ const Home = () => {
         </section>
         <Divider />
         <section id="skills" className="w-full my-8">
-          <h1 className="text-4xl">
-            <Trans i18nKey="section.skills">Skills</Trans>
-          </h1>
+        <SectionTitle title="Skills" translation="section.skills" />
         </section>
         <div className="ticker-wrap">
           <div className="ticker flex">

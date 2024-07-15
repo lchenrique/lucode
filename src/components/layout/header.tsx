@@ -46,9 +46,9 @@ const Header = () => {
       className="fixed z-50  flex justify-center items-center h-16 px-6 w-full shadow-lg shadow-foreground/10 rounded-md bg-clip-padding bg-background/70  backdrop-filter backdrop-blur-md bg-opacity-60"
     >
       <div className="flex container  w-full items-center justify-between">
-        <span className="text-xl">
-          lucode.
-          <span className="text-primary font-bold">dev</span>
+        <span className="text-xl jets-brains">
+          Code by <span className="text-primary font-bold jets-brains">Carlos</span>
+          {/* <span className="text-primary font-bold jets-brains">dev</span> */}
         </span>
         <nav className="flex items-center gap-6">
           <ul className="flex [&_li]:px-3 SMN_effect-31 [&_a]:font-semibold divide-x-2">

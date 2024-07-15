@@ -3,10 +3,17 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+*:not(.jets-brains) {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  
+}
+
+.jets-brains{
+  font-family: "JetBrains Mono", monospace !important;
+  font-optical-sizing: auto  !important;
+  font-style: normal  !important;
 }
 
 @layer base {

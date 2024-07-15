@@ -7,7 +7,7 @@ export interface ISectionTitleProps {
 
 const SectionTitle = ({ title, translation }: ISectionTitleProps) => {
   return (
-    <h1 className="text-4xl mb-5">
+    <h1 className="text-4xl mb-5 jets-brains">
       <Trans i18nKey={translation}>
         {title}
       </Trans>
