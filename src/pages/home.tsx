@@ -15,6 +15,7 @@ import {
   TabletSmartphone,
 } from "lucide-react";
 import { useEffect, useState } from "react";
+import { portfolioImages } from "./images";
 
 const Home = () => {
   const [showScrollToTopButton, setScrollToTopButton] = useState(false);
@@ -152,10 +153,10 @@ const Home = () => {
 
           <div className="flex items-center w-full justify-between flex-col lg:flex-row gap-10">
             <Features
-              preview="src/assets/portfolio/colaborators.jpg"
+              preview={portfolioImages.colaborators}
               images={[
-                "src/assets/portfolio/dashboard.jpg",
-                "src/assets/portfolio/userdetails.jpg",
+                portfolioImages.dashboard,
+                portfolioImages.userdetails,
               ]}
               title="Reallagos"
               subtitle={
@@ -181,11 +182,11 @@ const Home = () => {
               ]}
             />
             <Features
-              preview="src/assets/portfolio/softconta-lp/softconta-landing-page.png"
+              preview={portfolioImages.softcontaLandingPage}
               images={[
-                "src/assets/portfolio/softconta-lp/cadastro.png",
-                "src/assets/portfolio/softconta-lp/login.png",
-                "src/assets/portfolio/softconta-lp/recovery-pass.png",
+                portfolioImages.cadastro,
+                portfolioImages.login,
+                portfolioImages.recoveryPass,
               ]}
               title="Softconta"
               subtitle="Landing page"
@@ -208,11 +209,11 @@ const Home = () => {
           </div>
           <div className="flex items-center w-full justify-between flex-col lg:flex-row gap-10">
             <Features
-              preview="src/assets/portfolio/medtime/medtime.png"
+              preview={portfolioImages.medtime}
               images={[
-                "src/assets/portfolio/medtime/patients.png",
-                "src/assets/portfolio/medtime/medtime-dark.png",
-                "src/assets/portfolio/medtime/patients-dark.png",
+                portfolioImages.patients,
+                portfolioImages.medtimeDark,
+                portfolioImages.patientsDark,
               ]}
               title="Medtime"
               subtitle="Web app"
@@ -257,11 +258,11 @@ const Home = () => {
             />
 
             <Features
-              preview="src/assets/portfolio/magic-panel/magic-panel.png"
+              preview={portfolioImages.magicPanel}
               images={[
-                "src/assets/portfolio/magic-panel/modal.png",
-                "src/assets/portfolio/magic-panel/drawer.png",
-                "src/assets/portfolio/magic-panel/drawer-b.png",
+                portfolioImages.modal,
+                portfolioImages.drawer,
+                portfolioImages.drawerB,
               ]}
               title="Magic 🪄 Panel"
               subtitle={<Trans i18nKey="lib.for.react">Biblioteca React</Trans>}
