@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { portfolioImages } from "./images";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [showScrollToTopButton, setScrollToTopButton] = useState(false);
@@ -25,7 +26,7 @@ const Home = () => {
 
   useEffect(() => {
     function verificarPosicao() {
-      const header = document.getElementById("hero");
+      const header = document.getElementById("home");
       if (header) {
         const headerRect = header.getBoundingClientRect();
         if (headerRect.bottom <= 540 && headerRect.top <= 1) {
@@ -114,7 +115,7 @@ const Home = () => {
         </section>
         <Divider />
         <section id="skills" className="w-full my-8">
-        <SectionTitle title="Skills" translation="section.skills" />
+          <SectionTitle title="Skills" translation="section.skills" />
         </section>
         <div className="ticker-wrap">
           <div className="ticker flex">
@@ -150,10 +151,7 @@ const Home = () => {
           <div className="flex items-center w-full justify-between flex-col lg:flex-row gap-10">
             <Features
               preview={portfolioImages.colaborators}
-              images={[
-                portfolioImages.dashboard,
-                portfolioImages.userdetails,
-              ]}
+              images={[portfolioImages.dashboard, portfolioImages.userdetails]}
               title="Reallagos"
               subtitle={
                 <Trans i18nKey="system.for.accountants">
@@ -294,10 +292,12 @@ const Home = () => {
         <div className="w-full h-[1px] bg-gray-100/5 mt-10" />
         {showScrollToTopButton && (
           <Button
-            onClick={scrollToTop}
+            asChild
             className="h-12 w-12 slide-top scale-up-center z-50  rounded-full fixed right-10   min-[1395px]:right-20  min-[1795px]:right-80  bottom-2 sm:-bottom-5 bg-primary flex items-center justify-center"
           >
-            <ChevronsUp />
+            <Link onClick={scrollToTop} to="/">
+              <ChevronsUp />
+            </Link>
           </Button>
         )}
       </Main>

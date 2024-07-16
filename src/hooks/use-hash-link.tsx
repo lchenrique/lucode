@@ -8,7 +8,7 @@ const useHashLink = (sections:string[]) => {
 
   useEffect(() => {
     function verificarPosicao() {
-      const header = document.getElementById('meuHeader'); // Substitua 'meuHeader' pelo ID do seu cabeçalho
+      const header = document.getElementById('myHeader'); // Substitua 'myHeader' pelo ID do seu cabeçalho
       const sectionsArr = sections.map((section) => {
         return  {element: document.getElementById(section.slice(1)) , section}
       })

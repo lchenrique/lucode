@@ -74,7 +74,7 @@ const Hero = () => {
   return (
     <>
       <div
-        id="hero"
+        id="home"
         className="h-full flex-col-reverse lg:flex-row text-left  flex items-center justify-center w-full "
       >
         <div className="flex flex-col gap-2 sm:text-base mx-3  ">

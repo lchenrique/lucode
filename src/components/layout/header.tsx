@@ -1,6 +1,6 @@
 import { useHashLink } from "@/hooks/use-hash-link";
 import i18n from "@/lib/i18n";
-import {  Moon, Sun } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 import { HashLink } from "react-router-hash-link";
 import { Trans, TransProps } from "../translate/translate";
 import { useTranslate } from "@/hooks/use-translate";
@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 import { Theme, useTheme } from "../theme-provider";
 import logo from "@/assets/codebycarlos.svg";
 import logoDark from "@/assets/codebycarlosdark.svg";
+import { Link } from "react-router-dom";
 
 export interface IHeaderProps {}
 
@@ -23,7 +24,7 @@ const Header = () => {
     });
   };
 
-  const hashLinkArr = ["#hero", "#my-services", "#skills", "#projects"];
+  const hashLinkArr = ["#my-services", "#skills", "#projects"];
   const { activeHashLink } = useHashLink(hashLinkArr);
 
   const mainTheme: any = {
@@ -44,17 +45,23 @@ const Header = () => {
     { title: "section.projects", id: "#projects" },
   ];
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <>
       <header
-        id="meuHeader"
+        id="myHeader"
         className="fixed z-50  flex justify-center items-center h-16 px-6 w-full shadow-lg shadow-foreground/10 rounded-md bg-clip-padding bg-background/70  backdrop-filter backdrop-blur-md bg-opacity-60"
       >
         <div className="flex sm:container gap-2  w-full items-center justify-between">
           {/* <span className="text-xl jets-brains">
           Code by <span className="text-primary font-bold jets-brains">Carlos</span>
         </span> */}
-          <img src={theme === "dark" ? logo : logoDark} className="w-40" />
+          <Link onClick={scrollToTop} to="/">
+            <img src={theme === "dark" ? logo : logoDark} className="w-40" />
+          </Link>
           <nav className="flex items-center gap-6  h-16">
             <ul className="md:flex hidden [&_li]:px-3 SMN_effect-31 [&_a]:font-semibold divide-x-2 h-full">
               {menu.map((value) => {
@@ -118,7 +125,7 @@ const Header = () => {
                 smooth
                 to={value.id}
                 data-hover={t(value.title)}
-                className={`${activeHashLink.includes(value.id) ? "text-primary" : "text-foreground"} group-hover:text-primary hover:text-primary h-full flex items-center`}
+                className={`${activeHashLink.includes(value.id) ? "text-primary" : "text-foreground"} group-active:text-primary active:text-primary h-full flex items-center`}
               >
                 <li>
                   <span className="align-middle self-center block">
