@@ -23,7 +23,7 @@ const pt = {
     "projects.reallagos.description": `O Sistema oferece uma solução abrangente para gerenciar tarefas contábeis e financeiras. O sistema facilita o controle de balanços, relatórios financeiros, lançamentos contábeis e outras operações essenciais.`,
     "projects.sofconta.description": `O sistema foi criado para atender às necessidades de contadores modernos. Com ele, é possível eliminar totalmente a dependência de planilhas e outras ferramentas manuais.`,
     "projects.medtime.description": "É um sistema web desenvolvido para ajudar usuários a lembrar de tomar seus medicamentos na hora certa. Com uma interface intuitiva e notificações automáticas.",
-    "projects.magicpanel.description": "Biblioteca React criada para facilitar o uso de modais e drawers em suar aplicações web.",
+    "projects.magicpanel.description": "Biblioteca React criada para facilitar o uso de modais e drawers em suas aplicações web.",
     "system.for.accountants": "Sistema para contadores",
     "lib.for.react": "Biblioteca React",
     "under.development": "Em desenvolvimento",
