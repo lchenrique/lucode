@@ -8,7 +8,6 @@ import {
   Linkedin,
   Mail,
   MessageCircle,
-  Send,
 } from "lucide-react";
 import avataImg from "../assets/avatar-hero.png";
 import { Trans } from "./translate/translate";
@@ -16,7 +15,7 @@ import curriculum from "../assets/Carlos-Henrique-de-Oliveira-curriculo.pdf";
 import i18n from "@/lib/i18n";
 import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
 import { Divider } from "./divider/divider";
-import { PopoverAnchor, PopoverArrow } from "@radix-ui/react-popover";
+import { PopoverArrow } from "@radix-ui/react-popover";
 
 const Hero = () => {
   const [toggle, setToggle] = useState(false);
