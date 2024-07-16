@@ -1,6 +1,6 @@
 import { useHashLink } from "@/hooks/use-hash-link";
 import i18n from "@/lib/i18n";
-import { Menu, Moon, Sun } from "lucide-react";
+import {  Moon, Sun } from "lucide-react";
 import { HashLink } from "react-router-hash-link";
 import { Trans, TransProps } from "../translate/translate";
 import { useTranslate } from "@/hooks/use-translate";
