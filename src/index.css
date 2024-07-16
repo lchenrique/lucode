@@ -77,7 +77,8 @@
 .SMN_effect-31 a {
   position: relative;
   overflow: hidden;
-  display: block;
+  display: flex;
+  align-items: center;
   text-align: center;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -116,17 +117,19 @@
 
 .SMN_effect-31 a:hover span {
   color: var(hsl(--primary));
-  -webkit-transform: translateY(-100%);
-  transform: translateY(-100%);
+  -webkit-transform: translateY(-200%);
+  transform: translateY(-200%);
 }
 
 .SMN_effect-31 a:hover:after {
-  top: 0;
+  top: 30%;
+ 
 }
 
 .SMN_effect-31 a:active {
   -webkit-animation-name: rubberBand;
   animation-name: rubberBand;
+  @apply font-semibold
 }
 
 

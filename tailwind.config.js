@@ -3,6 +3,7 @@
 /** @type {import('tailwindcss').Config} */
 
 export const darkMode = ["class"]
+// export const important = true
 export const content = [
   './pages/**/*.{ts,tsx}',
   './components/**/*.{ts,tsx}',

@@ -295,7 +295,7 @@ const Home = () => {
         {showScrollToTopButton && (
           <Button
             onClick={scrollToTop}
-            className="h-12 w-12 slide-top scale-up-center  rounded-full fixed right-10   min-[1395px]:right-20  min-[1795px]:right-80  -bottom-5 bg-primary flex items-center justify-center"
+            className="h-12 w-12 slide-top scale-up-center z-50  rounded-full fixed right-10   min-[1395px]:right-20  min-[1795px]:right-80  bottom-2 sm:-bottom-5 bg-primary flex items-center justify-center"
           >
             <ChevronsUp />
           </Button>

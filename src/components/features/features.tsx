@@ -50,7 +50,7 @@ const Features = ({ title, subtitle, preview, tags, description, images }: IFeat
         </div>
         <div className="flex flex-wrap gap-3">
           {tags?.map(value => {
-            return <div className="px-2  rounded-lg w-max flex-1 " style={{ background: technologies[value] }}>{value}</div>
+            return <div className="px-2  rounded-lg w-max flex-1 text-background" style={{ background: technologies[value] }}>{value}</div>
           })}
         </div>
 
