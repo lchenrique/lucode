@@ -150,8 +150,29 @@ const Home = () => {
 
           <div className="flex items-center w-full justify-between flex-col lg:flex-row gap-10">
             <Features
-              preview={portfolioImages.colaborators}
-              images={[portfolioImages.dashboard, portfolioImages.userdetails]}
+              preview={portfolioImages.reallagos.colaborators}
+              images={[
+                portfolioImages.reallagos.dashboard,
+                portfolioImages.reallagos.userdetails,
+                portfolioImages.reallagos.img1,
+                portfolioImages.reallagos.img2,
+                portfolioImages.reallagos.img3,
+                portfolioImages.reallagos.img4,
+                portfolioImages.reallagos.img5,
+                portfolioImages.reallagos.img7,
+                portfolioImages.reallagos.img8,
+                portfolioImages.reallagos.img9,
+                portfolioImages.reallagos.img10,
+                portfolioImages.reallagos.img11,
+                portfolioImages.reallagos.img12,
+                portfolioImages.reallagos.img13,
+                portfolioImages.reallagos.img14,
+                portfolioImages.reallagos.img15,
+                portfolioImages.reallagos.img16,
+                portfolioImages.reallagos.img17,
+                portfolioImages.reallagos.img18
+
+              ]}
               title="Reallagos"
               subtitle={
                 <Trans i18nKey="system.for.accountants">
