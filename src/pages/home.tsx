@@ -2,7 +2,7 @@ import { Card } from "@/components/card";
 import { Divider } from "@/components/divider/divider";
 import { Flex } from "@/components/elements/flex";
 import { Features } from "@/components/features/features";
-import { Hero } from "@/components/hero.";
+import { Hero } from "@/components/hero";
 import { Main } from "@/components/layout/Main";
 import { SectionTitle } from "@/components/section-title/section-title";
 import { SkillIcon } from "@/components/skill-icon";
@@ -170,8 +170,7 @@ const Home = () => {
                 portfolioImages.reallagos.img15,
                 portfolioImages.reallagos.img16,
                 portfolioImages.reallagos.img17,
-                portfolioImages.reallagos.img18
-
+                portfolioImages.reallagos.img18,
               ]}
               title="Reallagos"
               subtitle={
