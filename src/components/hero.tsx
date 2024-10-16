@@ -78,39 +78,37 @@ const Hero = () => {
         className="h-full flex-col-reverse lg:flex-row text-left  flex items-center justify-center w-full "
       >
         <div className="flex flex-col gap-2 sm:text-base mx-3  ">
-          <h1 className="font-semibold text-foreground  mt-10 text-[2rem] sm:text-5xl text-center lg:text-left jets-brains">
-            <Trans i18nKey="hero.hello">Hi, I’m</Trans>{" "}
-            <span className="text-primary whitespace-nowrap font-extrabold jets-brains">
-              Carlos Henrique
+          <h1 className="font-semibold text-foreground  mt-10 text-[2rem] sm:text-5xl text-center lg:text-left montserrat">
+            <span className="text-primary whitespace-nowrap font-bold montserrat">
+              Carlos Henrique.
             </span>
-            .
           </h1>
           <div className="items-baseline text-[1.5rem] justify-center lg:justify-start inline-flex mx-auto lg:mx-0  gap-3 sm:text-5xl w-full  max-w-[750px]">
             {i18n.resolvedLanguage == "en" && (
-              <span className="font-semibold leading-[100%] text-foreground jets-brains">
+              <span className="leading-[100%] text-foreground montserrat">
                 a
               </span>
             )}
             <span
               style={{ width }}
-              className="whitespace-nowrap  leading-[2.5rem] sm:leading-[3.5rem]  overflow-hidden transition-all duration-500 jets-brains"
+              className="whitespace-nowrap  leading-[2.5rem] sm:leading-[3.5rem]  overflow-hidden transition-all duration-500 montserrat"
             >
-              <b
+              <span
                 ref={ref1}
                 className={
-                  toggle ? "hidden" : "visible text-foreground jets-brains"
+                  toggle ? "hidden" : "visible text-foreground montserrat"
                 }
               >
                 <Trans i18nKey="role.ref1">Developer.</Trans>
-              </b>
-              <b
+              </span>
+              <span
                 ref={ref2}
                 className={
-                  !toggle ? "hidden" : "visible text-foreground jets-brains"
+                  !toggle ? "hidden" : "visible text-foreground montserrat"
                 }
               >
                 <Trans i18nKey="role.ref2">Front-End Engineer.</Trans>
-              </b>
+              </span>
             </span>
             <div
               className={`w-[3px] h-[1.5rem] sm:h-[42px]  bg-white leading-none animate-[pulse_800ms_ease-in-out_infinite]  ${width !== "0" ? "ml-0" : "-ml-3"}`}
@@ -119,10 +117,15 @@ const Hero = () => {
           <div className="w-full ">
             <p className="text-card-foreground text-center lg:text-left">
               <Trans i18nKey="about.me">
-                I specialize in front-end development, focusing on crafting
-                beautiful and intuitive user interfaces. With a deep
-                understanding of modern JavaScript frameworks and a keen eye for
-                design, I strive to deliver exceptional user experiences.
+                My mission is to turn digital businesses into success stories.
+                With over 5 years of experience, I create web solutions ranging
+                from powerful e-commerce sites to custom apps, always focused on
+                delivering real results. I'm passionate about technology and
+                innovation, and beyond building impactful projects, I share
+                knowledge with other professionals. I believe in the power of a
+                well-structured online presence to transform businesses. If
+                you're ready to take your digital presence to the next level,
+                let's work together!
               </Trans>
             </p>
           </div>

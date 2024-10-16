@@ -6,8 +6,8 @@ import { Trans, TransProps } from "../translate/translate";
 import { useTranslate } from "@/hooks/use-translate";
 import { cn } from "@/lib/utils";
 import { Theme, useTheme } from "../theme-provider";
-import logo from "@/assets/codebycarlos.svg";
-import logoDark from "@/assets/codebycarlosdark.svg";
+import logo from "@/assets/logo-dark.svg";
+import logoDark from "@/assets/logo-light.svg";
 import { Link } from "react-router-dom";
 
 export interface IHeaderProps {}
@@ -56,8 +56,8 @@ const Header = () => {
         className="fixed z-50  flex justify-center items-center h-16 px-6 w-full shadow-lg shadow-foreground/10 rounded-md bg-clip-padding bg-background/70  backdrop-filter backdrop-blur-md bg-opacity-60"
       >
         <div className="flex sm:container gap-2  w-full items-center justify-between">
-          {/* <span className="text-xl jets-brains">
-          Code by <span className="text-primary font-bold jets-brains">Carlos</span>
+          {/* <span className="text-xl montserrat">
+          Code by <span className="text-primary font-bold montserrat">Carlos</span>
         </span> */}
           <Link onClick={scrollToTop} to="/">
             <img src={theme === "dark" ? logo : logoDark} className="w-40" />
